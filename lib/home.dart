@@ -37,6 +37,7 @@ class HomePage extends StatelessWidget {
       return Card(
         clipBehavior: Clip.antiAlias,
         // TODO: Adjust card heights (103)
+        elevation: 0.0,
         child: Column(
           // TODO: Center items on the card (103)
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,9 +63,11 @@ class HomePage extends StatelessWidget {
                     Text(
                       product.name,
                       style: theme.textTheme.headline6,
+                      softWrap: false,
+                      overflow: TextOverflow.ellipsis,
                       maxLines: 1,
                     ),
-                    const SizedBox(height: 8.0),
+                    const SizedBox(height: 4.0),
                     Text(
                       formatter.format(product.price),
                       style: theme.textTheme.subtitle2,

@@ -22,7 +22,10 @@ class _LoginPageState extends State<LoginPage> {
               children: <Widget>[
                 Image.asset('assets/diamond.png'),
                 const SizedBox(height: 16.0),
-                const Text('BANYA BHAI'),
+                Text(
+                  'BANYA BHAI',
+                  style: Theme.of(context).textTheme.headline5,
+                ),
               ],
             ),
             const SizedBox(height: 120.0),
@@ -58,15 +61,24 @@ class _LoginPageState extends State<LoginPage> {
                     _usernameController.clear();
                     _passwordController.clear();
                   },
+                  style: TextButton.styleFrom(
+                    primary: Theme.of(context).colorScheme.secondary,
+                  ),
                 ),
+
                 // TODO: Add an elevation to NEXT (103)
+
                 // TODO: Add a beveled rectangular border to NEXT (103)
                 ElevatedButton(
                   child: const Text('NEXT'),
                   onPressed: () {
-                    // TODO: Show the next page (101)
                     Navigator.pop(context);
                   },
+                  style: ElevatedButton.styleFrom(
+                    elevation: 8.0,
+                    shape: const BeveledRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(7.0)),
+                  ),
                 ),
               ],
             ),
