@@ -24,6 +24,23 @@ class _LoginPageState extends State<LoginPage> {
               ],
             ),
             const SizedBox(height: 120.0),
+
+            TextField(
+              decoration: const InputDecoration(
+                filled: true,
+                labelText: 'Username',
+              ),
+            ),
+// spacer
+            const SizedBox(height: 14.0),
+// [Password]
+            TextField(
+              decoration: const InputDecoration(
+                filled: true,
+                labelText: 'Password',
+              ),
+              obscureText: true,
+            ),
           ],
         ),
       ),
