@@ -17,11 +17,11 @@ class _LoginPageState extends State<LoginPage> {
         child: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
           children: <Widget>[
-            const SizedBox(height: 80.0),
+            const SizedBox(height: 90.0),
             Column(
               children: <Widget>[
                 Image.asset('assets/diamond.png'),
-                const SizedBox(height: 16.0),
+                const SizedBox(height: 25.0),
                 Text(
                   'BANYA BHAI',
                   style: Theme.of(context).textTheme.headline5,
@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
 // spacer
-            const SizedBox(height: 14.0),
+            const SizedBox(height: 30.0),
 // [Password]
 
             TextField(
@@ -76,8 +76,6 @@ class _LoginPageState extends State<LoginPage> {
                   },
                   style: ElevatedButton.styleFrom(
                     elevation: 8.0,
-                    shape: const BeveledRectangleBorder(
-      borderRadius: BorderRadius.all(Radius.circular(7.0)),
                   ),
                 ),
               ],
